@@ -21,3 +21,32 @@
 [data-theme="dark"] #page-header::before {
   background: transparent !important;
 }
+
+/* ===== APlayer 深色模式适配 ===== */
+
+/* 深色模式下，播放器主体背景 */
+[data-theme=dark] .aplayer {
+    background: rgba(22, 22, 22, 0.7) !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+/* 深色模式下，吸底播放器的背景 */
+[data-theme=dark] .aplayer.aplayer-fixed .aplayer-body {
+    background: rgba(22, 22, 22, 0.7) !important;
+}
+
+/* 深色模式下，歌曲列表的背景 */
+[data-theme=dark] .aplayer .aplayer-list {
+    background: rgba(22, 22, 22, 0.7) !important;
+}
+
+/* 深色模式下，歌曲信息文字颜色 */
+[data-theme=dark] .aplayer .aplayer-info .aplayer-music .aplayer-title,
+[data-theme=dark] .aplayer .aplayer-info .aplayer-music .aplayer-author {
+    color: #fff !important;
+}
+
+/* 深色模式下，列表分隔线颜色 */
+[data-theme=dark] .aplayer .aplayer-list ol li {
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
